@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h1.html file</title>
+    <style>
+        h1{
+            color:tomato;
+        }
+        a{
+            color:mediumorchid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Url navigation demo of h1.html file</h1>
+    <h1>Welcome Mr.{{name}} to Bangalore</h1>
+
+
+    <a href="{% url 'h2' %}">click on this to go to h2.html file</a>
+    <br>
+    <br>
+    <a href="{% url 'app:h3' %}">click on this go to h3.html file</a>
+    <br>
+    <br>
+    <a href="{% url 'h4' %}">click on this to go to h4.html file</a>
+</body>
+</html>

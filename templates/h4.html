@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1
+        {
+            color:darkgreen; 
+        }
+        a{
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Conditional statements  of h4.html file</h1>
+    <h1>Jinja operational tags demo by Harshad sir</h1>
+
+<!----
+    {% if a > b %}
+    <h1>inside if condition</h1>   #using simple if conditional statment
+    <h1>{{a}}</h1>
+    {% endif %}
+    --->
+<!---
+ {% if a > b %}
+    <h1>inside if block</h1>       #using if-else conditional statment
+    {{a}}
+{% else %}
+    <h1>inside else block</h1>
+    {{b}}
+    {% endif %}
+--->
+
+<!---
+{% if a > b %}
+    <h1>a is greater value</h1>
+{% elif b > a %}
+    <h1>b is greater value</h1>    # using elif conditional statment
+{% else %}
+    <h1>values are same</h1>
+{% endif %}  
+
+
+--->
+# using nestedif conditional statment
+
+{% if a > b %}
+{% if a > c %}
+    <h1>inside if block</h1>  
+    <h1>a is greater value</h1>
+{% else %}
+    <h1>inside else block</h1>
+    <h1>c is greater value</h1>
+{% endif %}
+{% elif b > c %}
+    <h1>inside elif block</h1>
+    <h1>b is greater value</h1>
+{% else %}
+    <h1>outside else block</h1>
+    <h1>c is greater value</h1>   
+{% endif %}  
+<a href="{% url 'h1' %}">click on this to go to h1.html file</a>
+</div>
+</body>
+</html>
